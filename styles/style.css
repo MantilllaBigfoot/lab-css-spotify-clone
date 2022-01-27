@@ -1,8 +1,22 @@
-/*
-Colors:
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+/*https://flexbox.help/*/
 
-*/
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  font-size: 22px;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+header img {
+  height: 50px;
+}
