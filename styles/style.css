@@ -1,22 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /*https://flexbox.help/*/
+/* Colors:
+Text: 1A1A1A
+Green: #00B172
+White: #FFF */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
-  font-size: 22px;
-  line-height: 150%;
-  box-sizing: border-box;
+  font-size: 32px;
+  /* line-height: 150%; */
 }
 
 header {
+  margin-top: 0.1em;
   display: flex;
   justify-content: space-between;
   height: 10%;
+  text-align: center;
+  align-items: center;
 }
 
 header img {
-  height: 50px;
+  height: 2em;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+header li {
+  list-style: none;
+  margin: 0 0.5em;
+}
+
+header a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  height: 20em;
+  background-position: center center;
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.top-section h1 {
+  font-size: 2em;
+}
+
+#options-headline {
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #00b172;
+}
+
+.options-section {
+  margin-top: 3em;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
+.options-section div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: #1a1a1a;
+}
+
+.options-section h4 {
+  color: #00b172;
+}
+
+.options-section p {
+  width: 9em;
+}
+
+.options-section img {
+  height: 10em;
+}
+
+.app-section {
+  background-color: #00b172;
+  background-image: url('../images/spotify-icon-white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3em;
+}
+.app-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-left: 3em;
+}
+
+.app-info h3 {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+#app-img {
+  height: 15em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-info p {
+  width: 20em;
 }
